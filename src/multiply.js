@@ -11,12 +11,25 @@ function multiplyArray(arr) {
 
 /* Multiply all elements in the array of array */
 function multiplyAll(arr) {
-  return;
+  let total = 1;
+  for (let sousListe of arr) {
+    total = total * multiplyArray(sousListe)
+  }
+  /*
+  for(let i=0; i < arr.length; i++) {
+    const sousListe = arr[i];
+    for(let j=0; j < sousListe.length; j++) {
+      total = total * sousListe[j]; // arr[i][j]
+    }
+  }
+  */
+  return total;
 }
 
 /* Multiply all elements in the given array which can have many sub-arrays*/
 function multiplyAllMixed(arr) {
-  return;
+  const flatArray = arr.flat(Infinity);
+  return multiplyArray(flatArray);
 }
 
 exports.multiplyArray = multiplyArray;
