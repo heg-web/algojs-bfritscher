@@ -11,6 +11,7 @@ You can return the array with its elements in any order.
 
 */
 function diffAB(a, b) {
+  /*
   const result = [];
   for (let i = 0; i < a.length; i++) {
     const element = a[i];
@@ -19,6 +20,8 @@ function diffAB(a, b) {
     }
   }
   return result;
+  */
+ return a.filter(el => !b.includes(el));
 }
 
 

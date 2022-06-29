@@ -2,11 +2,14 @@
 
 /* Multiply all elements of the provided array */
 function multiplyArray(arr) {
+  return arr.reduce( (total, el) => total * el, 1);
+  /*
   let total = 1;
   for(let i=0; i < arr.length; i++) {
     total = total * arr[i];
   }
   return total;
+  */
 }
 
 /* Multiply all elements in the array of array */
