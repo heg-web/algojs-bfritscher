@@ -11,7 +11,7 @@ describe("Assignment: Magic Object", function() {
             name: "abc",
             params: [2, 6]
           },
-          abc(a, b) {
+          abc: function(a, b) {
             return a / b;
           },
           names: ["a", "b", "c", "d"]
@@ -24,7 +24,7 @@ describe("Assignment: Magic Object", function() {
             name: "bac",
             params: [1, 2]
           },
-          bac(a, b) {
+          bac: function(a, b) {
             return a;
           },
           names: ["a", "b", "c", "d"]
